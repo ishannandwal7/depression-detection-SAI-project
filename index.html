@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Detection</title>
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="landingPage.css">
+
+  
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="main.html">Test</a></li>
+                <li><a href="#">About</a></li>
+                <!-- <li><a href="#">Menu</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li> -->
+            </ul>
+            <h1 class="logo">Depression Detection</h1>
+        </div>
+    </nav>
+    <div class="landing-page">
+        <div id="row">
+            <div id="svg1">
+              <img src="https://bit.ly/3fGidmX" id="lap">
+            </div>
+            <div id="row">
+              <div id="str"></div>
+              <!-- <div id="defin"></div> -->
+            </div>
+          </div>
+          <h1 id="define">Depression affects mood, behavior, energy and more.</h1>
+
+          
+        
+          
+            
+          </div>
+          
+          <!-- Testimonial Start -->
+          <div id="st">
+          
+            <h4>Our Team</h4>
+            <!-- <p id="tagline"> '' What Our Users Say ''</p> -->
+            <div class="" id="rc">
+          
+              <div class="" id="frist_card">
+                <img class="card-img-top" src="https://bit.ly/3fCExOa" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Ishan Nandwal</h4>
+                 
+                </div>
+              </div>
+          
+              <div class="" id="middle_card">
+                <img class="card-img-top" src="https://bit.ly/3fvGlZa" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Praveen saraswat</h4>
+                  
+                </div>
+              </div>
+              <div class="" id="frist_card">
+                <img class="card-img-top" src="https://bit.ly/3fCExOa" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Saurabh Kumar</h4>
+                 
+                </div>
+              </div>
+          
+          
+              <div class="" id="last_card">
+                <img class="card-img-top" src="https://bit.ly/3EixeWk" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Ravi Yadav</h4>
+                
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          
+          <div class="box"></div>
+          
+          <footer id="sticky-footer">
+            <div class="container text-center">
+              <small>Copyright &copy; Ishan nandwal. All rights reserved.</small>
+            </div>
+          </footer>
+    </div>
+    <script>
+        var string =
+  "Hello Welcome to Our Depression Detection Test.";
+  let def="Depression affects mood, behavior, energy and more.";
+var str = string.split("");
+var str1=def.split("");
+var el1=document.getElementById("defin");
+var el = document.getElementById("str");
+(function animate() {
+  str.length > 0 ? (el.innerHTML += str.shift()) : clearTimeout(running);
+  // str1.length>0?(el1.innerHTML+=str1.shift()):clearTimeout(running);
+  var running = setTimeout(animate, 120);
+})();
+
+    </script>
+</body>
+</html>

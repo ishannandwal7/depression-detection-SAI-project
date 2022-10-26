@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script>
+        let cnt=0;
+        function inc(val){
+            cnt+=val;
+            // console.log(cnt);
+        }
+        
+//         function cancel(){
+//         // document.getElementsByClassName("popup").style.display="none";
+//         alert("loser");
+// }
+    </script>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+            /* color: black !important; */
+        }
+        .fourth {
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            margin-top: 7%;
+            margin-bottom: 7%;
+            text-transform: capitalize;
+            padding: 5px 20px;
+   margin-left: 20%;
+   font-size: 30px;
+   font-weight: 300;
+   cursor: pointer;
+   
+}
+
+        ul li{
+            list-style-type: none;
+        }
+        strong{
+            color: red;
+        }
+        input{
+            padding-bottom: 10px;
+            margin: 10px;
+        }
+        legend{
+            font-size: 20px;
+            margin: 10px;
+        }
+       form{
+        /* border: 2px solid red; */
+        padding-left: 20%;
+    }
+        @media screen and (max-width:500px) {
+            form{
+                padding-left: 10% ;
+            }
+            
+        }
+        .popup{
+        z-index: 5;
+        display: none;
+        position: fixed;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left:50%;
+        background-color: black;
+        color: aliceblue;
+        border: 3px solid blue;
+        border-radius: 8px;
+        padding: 20px;
+        text-transform: capitalize;
+        }
+        .popup button{
+            cursor: pointer;
+            width: 30px;
+            border-radius: 8px;
+            color: red;
+            position: absolute;
+            right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Test</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <h1 class="logo">Depression Test </h1>
+        </div>
+    </nav>
+    <div class="popup" id="op">
+        <button onclick="cancel()">X</button>
+        <h1>result:</h1>
+        <br>
+        <h4 id="dat">Normal symptoms</h4>
+        <hr>
+        <br>
+        <p>for help contact the helpline number.</p>
+    </div>
+    <div class="con">
+
+        <h1>this is depression detection test
+
+            <p>please answer the questions carefully.</p>
+            <br>
+        </h1>
+
+     
+        <form >  
+<div class="sg-wrapper sg-theme-remedium">
+
+<div class="sg-content" id="sg-skipnav-target">
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">1.</span> Little interest or pleasure in doing things <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-4-meta" name="sgE-6869858-32-4-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-4-time" name="sgE-6869858-32-4-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-4-10001" class="sg-input sg-input-radio" name="sgE-6869858-32-4" aria-label="Not at all" value="10001">
+<label for="sgE-6869858-32-4-10001" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-4-10002" class="sg-input sg-input-radio" name="sgE-6869858-32-4" aria-label="Several days" value="10002">
+<label for="sgE-6869858-32-4-10002" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-4-10104" class="sg-input sg-input-radio" name="sgE-6869858-32-4" aria-label="More than half of the days" value="1010" onclick="inc(1)"> 
+<label for="sgE-6869858-32-4-10104" aria-hidden="true" aria-label="More than half of the days">More than half of the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-4-10105" class="sg-input sg-input-radio" name="sgE-6869858-32-4" aria-label="Nearly every day" value="1010" onclick="inc(2)">
+<label for="sgE-6869858-32-4-10105" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">2.</span> Feeling down, depressed, or hopeless <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-89-meta" name="sgE-6869858-32-89-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-89-time" name="sgE-6869858-32-89-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-89-10154" class="sg-input sg-input-radio" name="sgE-6869858-32-89" aria-label="Not at all" value="10154">
+<label for="sgE-6869858-32-89-10154" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-89-10155" class="sg-input sg-input-radio" name="sgE-6869858-32-89" aria-label="Several days" value="10155">
+<label for="sgE-6869858-32-89-10155" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-89-10156" class="sg-input sg-input-radio" name="sgE-6869858-32-89" aria-label="More than half of the days" value="10156"onclick="inc(1)"> 
+<label for="sgE-6869858-32-89-10156" aria-hidden="true" aria-label="More than half of the days">More than half of the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-89-10157" class="sg-input sg-input-radio" name="sgE-6869858-32-89" aria-label="Nearly every day" value="10157" onclick="inc(2)"> 
+<label for="sgE-6869858-32-89-10157" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">3.</span> Trouble falling or staying asleep, or sleeping too much <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-90-meta" name="sgE-6869858-32-90-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-90-time" name="sgE-6869858-32-90-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-90-10159" class="sg-input sg-input-radio" name="sgE-6869858-32-90" aria-label="Not at all" value="10159">
+<label for="sgE-6869858-32-90-10159" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-90-10160" class="sg-input sg-input-radio" name="sgE-6869858-32-90" aria-label="Several days" value="10160">
+<label for="sgE-6869858-32-90-10160" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-90-10161" class="sg-input sg-input-radio" name="sgE-6869858-32-90" aria-label="More than half of the days" value="10161" onclick="inc(1)"> 
+<label for="sgE-6869858-32-90-10161" aria-hidden="true" aria-label="More than half of the days">More than half of the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-90-10162" class="sg-input sg-input-radio" name="sgE-6869858-32-90" aria-label="Nearly every day" value="10162" onclick="inc(2)"> 
+<label for="sgE-6869858-32-90-10162" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+    </fieldset>
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">4.</span> Feeling tired or having little energy <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-91-meta" name="sgE-6869858-32-91-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-91-time" name="sgE-6869858-32-91-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-91-10164" class="sg-input sg-input-radio" name="sgE-6869858-32-91" aria-label="Not at all" value="10164">
+<label for="sgE-6869858-32-91-10164" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-91-10165" class="sg-input sg-input-radio" name="sgE-6869858-32-91" aria-label="Several days" value="10165">
+<label for="sgE-6869858-32-91-10165" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-91-10166" class="sg-input sg-input-radio" name="sgE-6869858-32-91" aria-label="More than half of the days" value="10166" onclick="inc(1)"> 
+<label for="sgE-6869858-32-91-10166" aria-hidden="true" aria-label="More than half of the days">More than half of the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-91-10167" class="sg-input sg-input-radio" name="sgE-6869858-32-91" aria-label="Nearly every day" value="10167" onclick="inc(2)"> 
+<label for="sgE-6869858-32-91-10167" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+    </fieldset>
+
+<div id="sgE-6869858-32-83-box" class="sg-question sg-type-instruction ">
+<input type="hidden" id="sgE-6869858-32-83-meta" name="sgE-6869858-32-83-meta" value="hidden=false&amp;required=false">
+<input type="hidden" id="sgE-6869858-32-83-time" name="sgE-6869858-32-83-time" value="">
+
+<div class="sg-instructions">
+<div class="sg-ad"><div class="rhm--ad" data-sizes="300x250"></div></div>	</div>
+
+</div>
+
+
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">5.</span> Poor appetite or overeating <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-63-meta" name="sgE-6869858-32-63-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-63-time" name="sgE-6869858-32-63-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-63-10122" class="sg-input sg-input-radio" name="sgE-6869858-32-63" aria-label="Not at all" value="10122">
+<label for="sgE-6869858-32-63-10122" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-63-10123" class="sg-input sg-input-radio" name="sgE-6869858-32-63" aria-label="Several days" value="10123">
+<label for="sgE-6869858-32-63-10123" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-63-10124" class="sg-input sg-input-radio" name="sgE-6869858-32-63" aria-label="More than half the days" value="10124"onclick="inc(1)">
+<label for="sgE-6869858-32-63-10124" aria-hidden="true" aria-label="More than half the days">More than half the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-63-10125" class="sg-input sg-input-radio" name="sgE-6869858-32-63" aria-label="Nearly every day" value="10125" onclick="inc(2)"> 
+<label for="sgE-6869858-32-63-10125" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+    </fieldset>
+
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">6.</span> Feeling bad about yourself - or that you are a failure or have let yourself or your family down <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-92-meta" name="sgE-6869858-32-92-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-92-time" name="sgE-6869858-32-92-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-92-10169" class="sg-input sg-input-radio" name="sgE-6869858-32-92" aria-label="Not at all" value="10169">
+<label for="sgE-6869858-32-92-10169" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-92-10170" class="sg-input sg-input-radio" name="sgE-6869858-32-92" aria-label="Several days" value="10170">
+<label for="sgE-6869858-32-92-10170" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-92-10171" class="sg-input sg-input-radio" name="sgE-6869858-32-92" aria-label="More than half the days" value="10171"onclick="inc(1)">
+<label for="sgE-6869858-32-92-10171" aria-hidden="true" aria-label="More than half the days">More than half the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-92-10172" class="sg-input sg-input-radio" name="sgE-6869858-32-92" aria-label="Nearly every day" value="10172" onclick="inc(2)"> 
+<label for="sgE-6869858-32-92-10172" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+    </fieldset>
+
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">7.</span> Trouble concentrating on things, such as reading the newspaper or watching television <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-93-meta" name="sgE-6869858-32-93-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-93-time" name="sgE-6869858-32-93-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-93-10174" class="sg-input sg-input-radio" name="sgE-6869858-32-93" aria-label="Not at all" value="10174">
+<label for="sgE-6869858-32-93-10174" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-93-10175" class="sg-input sg-input-radio" name="sgE-6869858-32-93" aria-label="Several days" value="10175">
+<label for="sgE-6869858-32-93-10175" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-93-10176" class="sg-input sg-input-radio" name="sgE-6869858-32-93" aria-label="More than half the days" value="10176"onclick="inc(1)">
+<label for="sgE-6869858-32-93-10176" aria-hidden="true" aria-label="More than half the days">More than half the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-93-10177" class="sg-input sg-input-radio" name="sgE-6869858-32-93" aria-label="Nearly every day" value="10177" onclick="inc(2)"> 
+<label for="sgE-6869858-32-93-10177" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+    </fieldset>
+
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">8.</span> Moving or speaking so slowly that other people could have noticed <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-94-meta" name="sgE-6869858-32-94-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-94-time" name="sgE-6869858-32-94-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-94-10179" class="sg-input sg-input-radio" name="sgE-6869858-32-94" aria-label="Not at all" value="10179">
+<label for="sgE-6869858-32-94-10179" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-94-10180" class="sg-input sg-input-radio" name="sgE-6869858-32-94" aria-label="Several days" value="10180">
+<label for="sgE-6869858-32-94-10180" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-94-10181" class="sg-input sg-input-radio" name="sgE-6869858-32-94" aria-label="More than half the days" value="10181"onclick="inc(1)">
+<label for="sgE-6869858-32-94-10181" aria-hidden="true" aria-label="More than half the days">More than half the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-94-10182" class="sg-input sg-input-radio" name="sgE-6869858-32-94" aria-label="Nearly every day" value="10182" onclick="inc(2)"> 
+<label for="sgE-6869858-32-94-10182" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+    </fieldset>
+
+<div id="sgE-6869858-32-85-box" class="sg-question sg-type-instruction ">
+<input type="hidden" id="sgE-6869858-32-85-meta" name="sgE-6869858-32-85-meta" value="hidden=false&amp;required=false">
+<input type="hidden" id="sgE-6869858-32-85-time" name="sgE-6869858-32-85-time" value="">
+
+<div class="sg-instructions">
+<div class="sg-ad"><div class="rhm--ad" data-sizes="300x250"></div></div>	</div>
+
+</div>
+
+
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">9.</span> Thoughts that you would be better off dead, or of hurting yourself <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-67-meta" name="sgE-6869858-32-67-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-67-time" name="sgE-6869858-32-67-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-67-10142" class="sg-input sg-input-radio" name="sgE-6869858-32-67" aria-label="Not at all" value="10142">
+<label for="sgE-6869858-32-67-10142" aria-hidden="true" aria-label="Not at all">Not at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-67-10143" class="sg-input sg-input-radio" name="sgE-6869858-32-67" aria-label="Several days" value="10143">
+<label for="sgE-6869858-32-67-10143" aria-hidden="true" aria-label="Several days">Several days</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-67-10144" class="sg-input sg-input-radio" name="sgE-6869858-32-67" aria-label="More than half the days" value="10144"onclick="inc(1)">
+<label for="sgE-6869858-32-67-10144" aria-hidden="true" aria-label="More than half the days">More than half the days</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-67-10145" class="sg-input sg-input-radio" name="sgE-6869858-32-67" aria-label="Nearly every day" value="10145" onclick="inc(2)"> 
+<label for="sgE-6869858-32-67-10145" aria-hidden="true" aria-label="Nearly every day">Nearly every day</label>	</li>
+</ul>
+    </div>
+
+    </fieldset>
+
+
+<legend class="sg-question-title sg-question-legend">
+    <span class="sg-question-number">10.</span> If you've had any days with issues above, how difficult have these problems made it for you at work, home, school, or with other people? <strong class="sg-required-icon">*<span class="sg-screenreader-only"></span></strong>			</legend>
+<input type="hidden" id="sgE-6869858-32-68-meta" name="sgE-6869858-32-68-meta" value="hidden=false&amp;required=true">
+<input type="hidden" id="sgE-6869858-32-68-time" name="sgE-6869858-32-68-time" value="">
+        <div class="sg-question-options ">
+<ul class="sg-list sg-list-vertical sg-list-vertical-flipped sg-labels-right" role="radiogroup">
+<li class="sg-first-li">
+<input type="radio" id="sgE-6869858-32-68-10147" class="sg-input sg-input-radio" name="sgE-6869858-32-68" aria-label="Not difficult at all" value="10147">
+<label for="sgE-6869858-32-68-10147" aria-hidden="true" aria-label="Not difficult at all">Not difficult at all</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-68-10148" class="sg-input sg-input-radio" name="sgE-6869858-32-68" aria-label="Somewhat difficult" value="10148">
+<label for="sgE-6869858-32-68-10148" aria-hidden="true" aria-label="Somewhat difficult">Somewhat difficult</label>	</li>
+<li>
+<input type="radio" id="sgE-6869858-32-68-10149" class="sg-input sg-input-radio" name="sgE-6869858-32-68" aria-label="Very difficult" value="10149"onclick="inc(1)">
+<label for="sgE-6869858-32-68-10149" aria-hidden="true" aria-label="Very difficult">Very difficult</label>	</li>
+<li class="sg-last-li">
+<input type="radio" id="sgE-6869858-32-68-10150" class="sg-input sg-input-radio" name="sgE-6869858-32-68" aria-label="Extremely difficult" value="10150">
+<label for="sgE-6869858-32-68-10150" aria-hidden="true" aria-label="Extremely difficult">Extremely difficult</label>	</li>
+</ul>
+    </div>
+
+    </fieldset>
+
+<div id="sgE-6869858-32-69-box" class="sg-question sg-type-textbox ">
+<input type="hidden" id="sgE-6869858-32-69-meta" name="sgE-6869858-32-69-meta" value="hidden=false&amp;required=false">
+<input type="hidden" id="sgE-6869858-32-69-time" name="sgE-6869858-32-69-time" value="">
+           
+                
+
+
+</div>
+<button id="refresh"></button>
+
+<input type="button" class="fourth" onclick="show()" value="RESULT"/>
+</div></form></div>
+        <!-- <input type="button" value="click me" onclick="inc()">
+        <input type="button" value="click me" onclick="inc()">
+        <input type="button" value="click me" onclick="inc()"> -->
+    </div>
+
+<script>
+    function show(){
+            // console.log(cnt,"count");
+            document.getElementById("op").style.display="block";
+            let x=document.getElementById("dat");
+            if(cnt>10 && cnt<=12){
+                x.innerHTML="moderate level";
+            }
+            else{
+                if(cnt>12){
+                    x.innerHTML="severe level"
+                }
+            }
+        }
+    function cancel(){
+        document.getElementById("op").style.display="none";
+        document.getElementById("refresh").click();
+}
+</script>
+
+
+
+</body>
+</html>
